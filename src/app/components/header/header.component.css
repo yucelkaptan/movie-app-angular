@@ -1,0 +1,16 @@
+.header {
+    background-color: rgb(36,42,50) !important;
+    color: white !important;
+    border-radius: 25px;
+}
+
+.navbar-nav a {
+    text-decoration: underline;
+    text-underline-offset: 4px; 
+  }
+  
+
+  .navbar-nav a:hover {
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="movie-background-image">
+        <img src="{{imageApi + datas.backdrop_path}}" alt="">
+    </div>
+    <div class="movie-banner">
+        <div class="movie-banner-image">
+            <img src="{{imageApi + datas.poster_path}}" alt="">
+        </div>
+    </div>
+    <div class="movie-info">
+        <div class="movie-info-date">
+            {{datas?.release_date?.slice(0,4)}}
+        </div>
+        <div class="movi-info-hour">
+            {{datas.runtime}}&nbsp;Minutes
+        </div>
+        <div class="movie-info-type" style="border: none;">
+            {{datas.genres[0].name}}
+        </div>
+    </div>
+    <div class="movie-tabs">
+        <ul class="movie-tabs-items text-white">
+            <li id="about-movie" [class.active] = "id === 'about-movie'" (click)="tabChange('about-movie')">About Movie</li>
+        </ul>
+        <div class="movie-tabs-content text-white">
+            <div class="movie-tabs-content-overview" *ngIf="id === 'about-movie'">
+                <div class="movie-tabs-content-overview-text">
+                    {{datas.overview}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

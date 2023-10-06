@@ -1,0 +1,111 @@
+.filter-movies {
+    width: 100%;
+  }
+  
+  
+  .filter-movies-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  
+  .filter-movies-items-image {
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  
+  .filter-movies-items-image img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+  .filter-movies-items-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+  }
+  
+  
+  .filter-movies-items-desc-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  
+  .filter-movies-items-desc-rate {
+    color: white;
+  }
+  
+  
+  .filter-movies-items-desc-date {
+    color: #fff;
+  }
+  
+  
+  .search-no-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
+  }
+  
+  
+  .search-no-result i {
+    color: #FF8700;
+    font-size: 96px;
+  }
+  
+  
+  .search-no-result-first {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+  
+  
+  .search-no-result-second {
+    color: #92929D;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    
+    .search-no-result {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto auto;
+    }
+  
+    
+    .search-no-result i {
+      color: #FF8700;
+      font-size: 56px;
+    }
+  
+    
+    .search-no-result-first {
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 24px;
+    }
+  
+    
+    .search-no-result-second {
+      color: #92929D;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 20px;
+    }
+  }
+  
